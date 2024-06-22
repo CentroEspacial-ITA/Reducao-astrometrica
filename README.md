@@ -1,19 +1,28 @@
-# Reducao-astrometrica
-Esse é um projeto do Centro Espacial ITA que visa fazer todo o caminho desde a observação prática de trajetórias de satélites até a visão computacional e cálculos correspondentes para determinação da trajetória dos satélites fotografados.
+# Astrometric Reduction
 
-# Como utilizar os códigos
+Welcome to the Astrometric Reduction project, an initiative by the ITA Space Center. This project encompasses the entire process from practical satellite trajectory observation to computer vision and the corresponding calculations for determining the trajectories of photographed satellites.
 
-## Programar_Observacao.py
-Esse é literalmente só rodar. Erros que podem ocorrer geralmente estão ligados à falta de módulos do python ou à versão do Selenium. 
+## How to Use the Code
 
-A saída te entrega um arquivo .zip contendo uma planilha do Excel com as observações programadas "observacoes.xlsx" e as fotos da trajetória estimada pelo Heavens Above de cada satélite escolhido na observação. O .zip é salvo no mesmo diretório do código.
+### Programar_Observacao.py
 
-## astrometric_reduction.ipynb
-Como é um notebook, dá para ir passo a passo, entendendo o que acontece.
+This script is straightforward to run. Common errors are typically related to missing Python modules or the version of Selenium being used.
 
-Precisará mudar o path para o arquivo de imagem (ou nomear sua imagem como está no código). Depois disso, é só rodar tudo. O ideal é rodar uma célula por vez, acompanhando o desenvolvimento das funções.
+**Output:** The script generates a `.zip` file containing an Excel spreadsheet (`observacoes.xlsx`) with the scheduled observations and photos of the estimated trajectory of each chosen satellite from Heavens Above. The `.zip` file is saved in the same directory as the script.
 
-Ao rodar tudo, teremos determinado as coordenadas desejadas (RA e dec) para input no código gauss_method.ipynb. 
+### astrometric_reduction.ipynb
 
-## gauss_method.ipynb
-Alterado o input das coordenadas e do tempo de observação no código, é só rodar e, ao fim, você terá os elementos orbitais da órbita do satélite correspondente.
+This Jupyter notebook allows you to go step by step, understanding each process as it unfolds.
+
+**Steps to Use:**
+1. Change the path to your image file (or name your image as specified in the code).
+2. Run each cell sequentially, following the development of the functions.
+
+**Output:** After running all cells, you will have the desired coordinates (RA and Dec) for input into the `gauss_method.ipynb` notebook.
+
+### gauss_method.ipynb
+
+Once you have updated the input coordinates and observation times in the code, simply run it. At the end, you will obtain the orbital elements of the corresponding satellite's orbit.
+
+---
+Feel free to contribute, raise issues, or suggest improvements. Happy coding!
